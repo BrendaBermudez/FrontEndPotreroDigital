@@ -1,0 +1,57 @@
+body {background-color: #FDEDEC; }
+
+h1 {
+  font-family: "Lucida Console", Courier, monospace;
+  color: #F0B27A;
+  font-size: 98px;
+  text-decoration: underline;
+  text-align: center;
+ }
+ h4 {
+   font-family: "Copperplate", serif;
+   color: #F0B27A;
+   font-size: 20px;
+   font-style: italic;
+   text-align: center;
+  }
+.img-comida{
+  width: auto;
+  height: 600px;
+    }
+
+
+.descripcion{
+   font-family: sans-serif;
+   font-size: 16px;
+   font-style: italic;
+   font-variant: normal;
+   font-weight: 100;
+   line-height: 15.4px;
+   text-align: justify;
+}
+
+.titulo1{
+  font-family: "Lucida Console", Courier, monospace;
+  color: #F0B27A;
+  font-size: 27px;
+  text-decoration: underline wavy;
+  text-align: center; }
+
+ul {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  text-align: justify;}
+
+.titulo2 {font-family: "Lucida Console", Courier, monospace;
+color: #F0B27A;
+font-size: 27px;
+text-decoration: underline;
+text-align: center;}
+
+ol{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  text-align: justify;
+}
