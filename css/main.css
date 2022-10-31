@@ -7,6 +7,7 @@
 body {
   background-color: #f5d6d4;
   width: 100vw;
+  margin:0;
 
  }
 .whatsapp{
@@ -25,46 +26,53 @@ body {
 header {
   background-color: rgb(243 127 127 / 63%);
   min-height: 22vh;
-  max-width: 100vw;
-  overflow:auto;
+  min-width: 100vw;
+  overflow: auto;
   position: static;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   padding-bottom: 1rem;
+  flex-wrap: wrap
 
 }
 .logo{
+  
   padding-top: 5px;
+  padding-left: 10px;
+  width: 1em;
   display: flex;
-  flex-wrap: wrap;
   flex-grow: 1;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .titulo_header{
-  font-size: 3.5rem;
-  font-family:'Spline Sans Mono', monospace;
+  font-size: 3em;
+  font-family: 'Spline Sans Mono', monospace;
   text-align: center;
   line-height: 95px;
   padding-top: 15px;
   color: black;
-  width: auto;
+  width: 20%;
   display: flex;
   flex-wrap: wrap;
   flex-grow: 3;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 
 }
 .redes_header{
-  padding: 3rem;
+  padding: 0.7em;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   box-sizing: border-box;
-  width: 25%;
+  width: 10%;
   min-height: 7vmax;
-  flex-wrap: wrap;
   flex-grow: 1;
+  align-content: flex-end;
+  justify-content: space-between;
 
 }
 nav {
@@ -73,101 +81,99 @@ nav {
   box-sizing: border-box;
   overflow: hidden;
   width: 100vw;
-  minheight: 6vh;
+  min-height: 6vh;
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  justify-content: space-around;
   list-style:none;
   font-size: 1.3rem;
   font-weight: bold;
   font-family:sans-serif;
   line-height: 17px;
+  
+}
+nav li{
+  width: 22%;
+  padding: 0.5em;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+}
+nav a{
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+}
+nav a:hover{
+  color:darksalmon;
+  font-weight: bold;
 }
 section{
-  width: auto;
+  width: 100%;
 }
 .receta_principal {
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
   background-color: rgb(255 255 255);
   position: static;}
 h1 {
   font-family:'Spline Sans Mono', monospace;
   color: #F0B27A;
   font-weight: lighter;
-  font-size: 4.1rem;
+  font-size: 3em;
   text-decoration: underline;
-  text-align: center;
- }
+  text-align: center; }
  h4 {
    font-family:'Spline Sans Mono', monospace;
    color: #F0B27A;
    font-size: 1.2rem;
    font-style: italic;
-   text-align: center;
-  }
+   text-align: center;  }
 .descripcion{
   font-family: 'Trispace', sans-serif;
   font-size: 1.2rem;
   font-style: italic;
   line-height: 1.5rem;
-  text-align: justify;
-}
+  text-align: justify;}
 .contenedor_pasos{
   text-align: center;
   width: 85vw;
   margin: auto;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-
-}
+  justify-content: space-around;}
 .contenedor_ingredientes{
   text-align: center;
   width: 85vw;
   margin: auto;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-}
+  justify-content: space-around;}
 .contenedor_ingredientes h3{
   font-family: 'Trispace', sans-serif;;
   color: #F0B27A;
   font-size: 1.6rem;
   text-align: center;
-  text-align: justify;
-}
+  text-align: justify;}
 .contenedor_pasos h2{
   font-family: 'Trispace', sans-serif;;
   color: #F0B27A;
   font-size: 1.6rem;
   text-align: center;
-  text-align: justify;
-}
+  text-align: justify;}
 .contenedor_pasos li{
     font-family:'Spline Sans Mono', monospace;
     font-weight: lighter;
-    font-size: 0.9em;
-}
+    font-size: 0.9em;}
 .contenedor_ingredientes li{
     font-family:'Spline Sans Mono', monospace;
     font-weight: lighter;
     font-size: 0.9em;
-    list-style: none;
-}
+    list-style: none;}
 ul {
   font-family: sans-serif;
   font-size: 1.3rem;
   font-style: normal;
   text-align: justify;
-  font-weight: lighter;
-
-}
+  font-weight: lighter;}
 .grupo1{
   text-align: left;
   overflow: hidden;
@@ -176,33 +182,32 @@ ul {
 .grupo2{
   text-align: left;
   overflow: hidden;
-  width: auto;
-}
+  width: auto;}
 .paso_a_paso1{
   text-align: left;
   overflow: hidden;
   height: auto;
   width: auto;
-  padding: 60px;
-}
+  padding: 60px;}
 .paso_a_paso2{
   text-align: left;
   overflow: hidden;
   height: auto;
   width: auto;
-  padding: 60px;
-}
+  padding: 60px;}
 ol{
   font-family: sans-serif;
   font-size: 1.3rem;
   font-style: normal;
-  text-align: justify;
-}
+  text-align: justify;}
 .video_receta{
-  clear: both;
+  width: 100%;
   display: flex;
   justify-content: center;
-}
+  align-items: center;}
+  .video_receta iframe{
+    width: 50%;
+  }
 /*FOOTER*/
 footer{
   font-family: sans-serif;
@@ -211,33 +216,28 @@ footer{
   bottom: 0;
   height: 35vh;
   padding-top: 0.9rem;
-  padding-left: 0.3rem;
-  margin:inherit;
-  display: flex;
-  flex-flow: row wrap;
-  overflow: hidden;
-  margin: 0;
-}
+  margin:0;
+  display: flex;}
 .institucional{
   box-sizing: border-box;
   height: 13.4rem;
-  width: 37%;
+  width: 35%;
   height: 98%;
   padding-top: 5px;
   padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 10px;
-  border: 1px solid white;
   overflow: inherit;
   position: relative;
   order: 1;
-  flex-grow: 2;
-
-}
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1
+  ;}
 .redes{
   box-sizing: border-box;
   height: 98%;
-  width: 31%;
+  width: 29%;
   padding-top: 5px;
   padding-bottom: 15px;
   padding-left: 10px;
@@ -245,35 +245,30 @@ footer{
   position: relative;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 1px solid white;
   overflow: inherit;
   text-align: center;
   margin-left: 0.3em;
   order: 3;
-  flex-grow: 1;
-
-}
+  flex-grow: 1;}
 .titulo3{
   font-size: 1.5rem;
-  text-align: left;
   font-style: normal;
   font-weight: bold;
-  line-height: 2px;
+  line-height: 1em;
   display: flex;
-  align-self: flex-start;
-  text-overflow:ellipsis;
-}
+  align-self: center;
+  justify-content: center;
+  text-overflow:ellipsis;}
 .insti_relleno{
-  font-size: 0.75rem;
+  font-size: 0.80em;
   text-align: justify;
   font-style: italic;
   font-weight: 100;
-  line-height: 13px;
+  line-height: 1.5em;
   display: flex;
+  flex-wrap: wrap;
   align-self: stretch;
-
-
-}
+  overflow:hidden;}
 .vertical_1 {
     border-right: 2px solid grey;
     height: 10.9rem;
@@ -281,23 +276,20 @@ footer{
     align-self: center;
     padding: 1px;
     text-align: center;
-    order: 2;
-}
+    order: 2;}
 .vertical_2 {
     border-right: 2px solid grey;
     height:10.9rem;
     width: 2px;
     align-self: center;
     order:4;
-    padding: 1px;
-}
+    padding: 1px;}
 .t_seguinos{
   text-align: center;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: bold;
-  line-height: 2px;
-}
+  line-height: 1em;} 
 .iconos{
   border: 1px;
   height: 3.7rem;
@@ -307,44 +299,46 @@ footer{
   display: flex;
   flex-flow: row wrap;
   align-content: center;
-  justify-content: center;
-}
+  justify-content: center;}
 .fb{
   position:static;
   max-width: 3.7rem;
-  max-height: 3.7rem;
-  }
+  max-height: 3.7rem; }
 .ig{
   position:static;
   max-width: 3.7rem;
-  max-height: 3.7rem;
-
-}
+  max-height: 3.7rem;}
 .tw{
   position:static;
   max-width: 3.7rem;
-  max-height: 3.7rem;
-
-}
+  max-height: 3.7rem;}
 .mapa_2{
-  border: 1px solid white;
+
   height: 97.5%;
   display: flex;
   justify-content: center;
   width: 28%;
   order:5;
   margin-left: 0.3em;
-  flex-grow: 2;
-
-  }
+  flex-grow: 1;}
+.mapa{
+  width: 70%;
+  display: flex;
+  align-items: center;}
 .mapa_2 iframe{
   align-self: center;
-
-}
+  width: 90%;}
 /*IMAGENES*/
+.imagenReceta{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .img-comida{
-  width: 55rem;
-  height: 37.5rem;}
+  width: 60%;
+  height:auto;
+  margin: auto;}
 .img_fb{
   position:static;
   max-width: 3.75rem;
@@ -357,16 +351,125 @@ footer{
   max-width:3.75rem;
   max-height:3.75rem;
   border-radius: 3.75rem;
-  background-color: #FFF;
-}
+  background-color: #FFF;}
 .img_tw{
   max-width: 3.75rem;
   max-height: 3.75rem;
   border-radius: 3.75rem;
-  background-color: #FFF;
-}
+  background-color: #FFF;}
 .logo_img{
   max-height: 105%;
   max-width: 9.37rem;
   border-radius: 5rem;
 }
+
+/* media queries */
+
+@media (min-width: 768px){
+  nav{
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  footer{
+    max-height: 35vh; 
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
+  footer .institucional, .redes, .mapa_2{
+    border: 1px solid white;
+  }
+
+}
+@media (max-width: 767px){
+  header{
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+  }
+  header .logo{
+    height: 20%;}
+  header .titulo_header{
+    width: 80%;  }
+  header .redes_header{
+    display: none; }
+  nav{
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+  nav li{
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;  
+  }
+  footer{
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%; }
+  footer .institucional, .redes, .mapa_2{
+    width: 90%;}
+  footer .vertical_1, .vertical_2{
+      display: none;}
+    }
+
+@media (max-width: 575px){
+      header{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.6em;
+        line-height: 50px;
+      }
+      header .logo{
+        height: 20%;}
+      header .titulo_header{
+        width: 80%;  }
+      header .redes_header{
+        display: none; }
+      nav{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center; }
+      nav li{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;  
+      }
+      footer{
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        width: 100%; }
+      footer .institucional, .redes, .mapa_2{
+        width: 90%;}
+      footer .vertical_1, .vertical_2{
+          display: none;}
+      .contenedor_ingredientes{
+        flex-flow: column wrap;
+      }
+      .contenedor_pasos{
+        flex-flow: column wrap;
+      }
+      .paso_a_paso1, .paso_a_paso2{
+        padding: 0;
+      }
+      .descripcion{
+        padding-right: 0.5em;
+      }
+      section{
+        background-image: url(../imagenes/zorro1.png);
+        background-size: 23%;
+        background-repeat: no-repeat;
+        background-blend-mode: luminosity;
+        background-position: 2% 2%;
+      }
+        }
+
+  
+
+
