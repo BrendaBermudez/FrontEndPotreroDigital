@@ -8,6 +8,8 @@ body {
   background-color: #f5d6d4;
   width: 100vw;
   margin:0;
+  display: flex;
+  flex-flow: column nowrap;
 
  }
 .whatsapp{
@@ -38,7 +40,7 @@ header {
 
 }
 .logo{
-  
+
   padding-top: 5px;
   padding-left: 10px;
   width: 1em;
@@ -88,7 +90,7 @@ nav {
   font-weight: bold;
   font-family:sans-serif;
   line-height: 17px;
-  
+
 }
 nav li{
   width: 22%;
@@ -106,12 +108,13 @@ nav a:hover{
   color:darksalmon;
   font-weight: bold;
 }
-section{
+main{
   width: 100%;
 }
-.receta_principal {
-  padding-top: 10px;
-  padding-bottom: 10px;
+
+main {
+  box-sizing: border-box;
+  padding: 10px;
   background-color: rgb(255 255 255);
   position: static;}
 h1 {
@@ -126,16 +129,19 @@ h1 {
    color: #F0B27A;
    font-size: 1.2rem;
    font-style: italic;
-   text-align: center;  }
+   text-align: center;
+ }
 .descripcion{
   font-family: 'Trispace', sans-serif;
   font-size: 1.2rem;
   font-style: italic;
   line-height: 1.5rem;
-  text-align: justify;}
+  text-align: justify;
+  margin: 2em;
+}
 .contenedor_pasos{
   text-align: center;
-  width: 85vw;
+  width: 85%;
   margin: auto;
   display: flex;
   flex-flow: row nowrap;
@@ -289,7 +295,7 @@ footer{
   font-size: 1.5rem;
   font-style: normal;
   font-weight: bold;
-  line-height: 1em;} 
+  line-height: 1em;}
 .iconos{
   border: 1px;
   height: 3.7rem;
@@ -362,7 +368,11 @@ footer{
   max-width: 9.37rem;
   border-radius: 5rem;
 }
-
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
 /* media queries */
 
 @media (min-width: 768px){
@@ -372,7 +382,7 @@ footer{
     align-items: center;
   }
   footer{
-    max-height: 35vh; 
+    max-height: 35vh;
     flex-flow: row wrap;
     justify-content: space-evenly;
     overflow: hidden;
@@ -402,7 +412,7 @@ footer{
   nav li{
     width: 100%;
     padding-left: 0px;
-    padding-right: 0px;  
+    padding-right: 0px;
   }
   footer{
     flex-flow: column wrap;
@@ -437,7 +447,7 @@ footer{
       nav li{
         width: 100%;
         padding-left: 0px;
-        padding-right: 0px;  
+        padding-right: 0px;
       }
       footer{
         flex-flow: column wrap;
@@ -458,10 +468,7 @@ footer{
       .paso_a_paso1, .paso_a_paso2{
         padding: 0;
       }
-      .descripcion{
-        padding-right: 0.5em;
-      }
-      section{
+      main{
         background-image: url(../imagenes/zorro1.png);
         background-size: 23%;
         background-repeat: no-repeat;
@@ -469,7 +476,3 @@ footer{
         background-position: 2% 2%;
       }
         }
-
-  
-
-
