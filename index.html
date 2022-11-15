@@ -8,12 +8,16 @@
   <meta name="author" content="Brenda Bermudez">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/main.css">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
 
   <title>Proyecto BBermudez</title>
+<script>
+  alert("¡Bienvenidos a Las recetas de la Abuela!")
+</script>
 </head>
 <body style="
 margin-top: 0px;
@@ -21,31 +25,32 @@ margin-right: 0px;
 margin-left: 0px;
 margin-bottom: 0px;
 ">
+
 <a href="https://api.whatsapp.com/send?phone=1127416757" class="whatsapp"> <img class="whatsapp" src="./imagenes/wpp.png" alt="wpp"> </a>
 
-<header>
+<header id="header">
   <div class="logo">  <img class="logo_img" src="./imagenes/logo.jpg" alt="logo">
   </div>
-  <div class="titulo_header">El recetario de la abuela</div>
+  <div id="titulo_header">El recetario de la abuela</div>
   <div class="redes_header">
     <div class="fb-"><a href="https://www.facebook.com/"> <img class="img_fb" src="./imagenes/facebook.png" alt="fb"> </a> </div>
     <div class="ig-"> <a href="https://www.instagram.com/"> <img class="img_ig" src="./imagenes/instagram.png" alt="ig"> </a> </div>
     <div class="tw-"> <a href="https://twitter.com/"> <img class="img_tw" src="./imagenes/twitter.png" alt="twt"> </a> </div>
   </div>
 </header>
-<nav>
-
-  <li> <a href="https://www.paulinacocina.net/">Paulina Cocina</a>
+<nav id="nav">
+  <li> <button class="button-55" onclick="modoOscuro()" role="button">DARK MODE</button> </li>
+  <li> <a class="links" href="https://www.paulinacocina.net/">Paulina Cocina</a>
   </li>
-  <li ><a href="https://cocinerosargentinos.com/">Cocineros Argentinos</a>
+  <li ><a class="links" href="https://cocinerosargentinos.com/">Cocineros Argentinos</a>
   </li>
-  <li><a href="https://cookpad.com/">Cookpad</a>
+  <li><a class="links" href="https://cookpad.com/">Cookpad</a>
   </li>
-  <li><a href="https://www.hogarmania.com/cocina/recetas/">Hogarmania</a>
+  <li><a class="links" href="https://www.hogarmania.com/cocina/recetas/">Hogarmania</a>
   </li>
 </nav>
 <br>
-<main class="receta_principal">
+<main id="main">
   <h1>Goulash con spätzle</h1>
   <center><div class="imagenReceta">
     <img class="img-comida" src="./imagenes/goulash.jpg" alt="IMAGEN PLATO"> </center>    <!--aca va la foto del plato-->  </div>
@@ -65,7 +70,7 @@ margin-bottom: 0px;
 
       <div class="grupo1">
 
-        <h3 style="color:Coral">Ingredientes Goulash </h3>
+        <h3>Ingredientes Goulash </h3>
         <ul>
           <li>Paprika 10gr.</li>
           <li>Harina 50gr.</li>
@@ -80,7 +85,7 @@ margin-bottom: 0px;
       </div>
 
       <div class="grupo2">
-        <h3 style="color:Coral">Ingredientes Spätzle</h3>
+        <h3>Ingredientes Spätzle</h3>
         <ul>
           <li>Leche 50cc.</li>
           <li>Agua gasificada 50cc.</li>
@@ -94,7 +99,7 @@ margin-bottom: 0px;
 
 
         <div class="paso_a_paso1">
-          <h2 style="color:DarkSalmon">Paso a Paso: GOULASH </h2>
+          <h2>Paso a Paso: GOULASH </h2>
           <ol>
             <li>Pique finamente las cebollas y rehogue en una sartén con manteca y grasa de cerdo.</li>
             <li>Retire los excesos de grasa de la carne, luego corte en bastones de 1 x 3 cm y pase por harina.</li>
@@ -106,7 +111,7 @@ margin-bottom: 0px;
         </div>
 
         <div class="paso_a_paso2">
-          <h2 style="color:DarkSalmon">Paso a Paso: SPÄTZLE </h2>
+          <h2>Paso a Paso: SPÄTZLE </h2>
           <ol>
             <li>En un bowl mezcle el huevo, el agua y la leche.
             </li>
@@ -175,7 +180,7 @@ margin-bottom: 0px;
       </div>
     </section>
     <br>
-    <footer>
+    <footer id="footer">
       <div class="institucional"> <div class="titulo3"> <p>¡Acerca de nosotros!</p></div>
       <br>
       <div class="insti_relleno"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p><!--ACA VA TRABJA CON NOSOTROS+LOREM-->  </div>
@@ -190,12 +195,19 @@ margin-bottom: 0px;
         <div class="ig"> <a href="https://www.instagram.com/"> <img class="img_ig" src="./imagenes/instagram.png" alt="ig"> </a>
         </div>
         <div class="tw"> <a href="https://twitter.com/"> <img class="img_tw" src="./imagenes/twitter.png" alt="twt"> </a> </div></div>
+        <button onclick="copy()"> Copyright</button>
       </div>
       <div class= "vertical_2"></div>
       <div class="mapa_2">  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13147.694147763252!2d-58.52795782963867!3d-34.530165158544555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0c6644d53c1%3A0x9c0cd6b0d56aa783!2sMunro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1666292681893!5m2!1ses!2sar" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </footer>
+    <script src="./js/main.js"> </script>
   </body>
 
 
   </html>
+
+
+
+
+ 
